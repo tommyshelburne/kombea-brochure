@@ -1,0 +1,21 @@
+export type BrochureTheme = 'dark' | 'light';
+
+export interface BrochureThemeState {
+  theme: BrochureTheme;
+  toggleTheme: () => void;
+}
+
+export interface BrochureNavState {
+  currentPage: number;
+  totalPages: number;
+  canGoPrev: boolean;
+  canGoNext: boolean;
+  goTo: (page: number) => void;
+  next: () => void;
+  prev: () => void;
+}
+
+export interface PdfDownloadState {
+  isGenerating: boolean;
+  download: () => Promise<void>;
+}
