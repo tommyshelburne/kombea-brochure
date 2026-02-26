@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { useBrochureNav } from '@/hooks/useBrochureNav';
 import { usePdfDownload } from '@/hooks/usePdfDownload';
 import { useBrochureTheme } from '@/hooks/useBrochureTheme';
+import { useViewportScale } from '@/hooks/useViewportScale';
 import { BrochureCanvas } from './BrochureCanvas';
 import { BrochureNav } from './BrochureNav';
 
@@ -13,13 +14,14 @@ export function KomBeaBrochure() {
   const nav = useBrochureNav();
   const pdf = usePdfDownload({ canvasRef, pageRefs, navRef });
   const brochureTheme = useBrochureTheme();
+  const scale = useViewportScale();
 
   return (
     <div
       className="fixed inset-0 overflow-auto"
       style={{ backgroundColor: 'var(--kb-outer-bg)' }}
     >
-      <BrochureCanvas ref={canvasRef} currentPage={nav.currentPage} pageRefs={pageRefs} />
+      <BrochureCanvas ref={canvasRef} currentPage={nav.currentPage} pageRefs={pageRefs} scale={scale} touchHandlers={nav.touchHandlers} />
       <BrochureNav ref={navRef} {...nav} {...pdf} {...brochureTheme} />
 
       {/* PDF generation overlay — sits above nav elements */}

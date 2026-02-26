@@ -17,13 +17,13 @@ export const BrochureNav = forwardRef<HTMLDivElement, Props>(function BrochureNa
       <div className="fixed top-6 left-6 z-50">
         <button
           onClick={toggleTheme}
-          className={`w-12 h-12 flex items-center justify-center rounded-full ${btnClass}`}
+          className={`w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center rounded-full ${btnClass}`}
           aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
         >
           {theme === 'dark' ? (
-            <Sun className="w-5 h-5" style={{ color: 'var(--kb-text)' }} />
+            <Sun className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: 'var(--kb-text)' }} />
           ) : (
-            <Moon className="w-5 h-5" style={{ color: 'var(--kb-text)' }} />
+            <Moon className="w-4 h-4 sm:w-5 sm:h-5" style={{ color: 'var(--kb-text)' }} />
           )}
         </button>
       </div>
@@ -37,7 +37,7 @@ export const BrochureNav = forwardRef<HTMLDivElement, Props>(function BrochureNa
           style={{ color: 'var(--kb-text)', fontFamily: 'Inter, sans-serif', fontWeight: 500, fontSize: '15px' }}
         >
           <Download className="w-4 h-4" />
-          Download PDF
+          <span className="hidden sm:inline">Download PDF</span>
         </button>
       </div>
 
@@ -46,13 +46,13 @@ export const BrochureNav = forwardRef<HTMLDivElement, Props>(function BrochureNa
         <button
           onClick={prev}
           disabled={!canGoPrev}
-          className={`w-16 h-16 flex items-center justify-center rounded-full disabled:opacity-20 disabled:cursor-not-allowed ${btnClass}`}
+          className={`w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full disabled:opacity-20 disabled:cursor-not-allowed ${btnClass}`}
           aria-label="Previous page"
         >
-          <ChevronLeft className="w-8 h-8" style={{ color: 'var(--kb-text)' }} />
+          <ChevronLeft className="w-5 h-5 sm:w-8 sm:h-8" style={{ color: 'var(--kb-text)' }} />
         </button>
         <span
-          className="text-xl tabular-nums tracking-tight min-w-[80px] text-center"
+          className="hidden sm:inline text-xl tabular-nums tracking-tight min-w-[80px] text-center"
           style={{ color: 'var(--kb-text)', fontFamily: 'Inter, sans-serif', fontWeight: 600 }}
         >
           {currentPage + 1} / {totalPages}
@@ -60,20 +60,20 @@ export const BrochureNav = forwardRef<HTMLDivElement, Props>(function BrochureNa
         <button
           onClick={next}
           disabled={!canGoNext}
-          className={`w-16 h-16 flex items-center justify-center rounded-full disabled:opacity-20 disabled:cursor-not-allowed ${btnClass}`}
+          className={`w-10 h-10 sm:w-16 sm:h-16 flex items-center justify-center rounded-full disabled:opacity-20 disabled:cursor-not-allowed ${btnClass}`}
           aria-label="Next page"
         >
-          <ChevronRight className="w-8 h-8" style={{ color: 'var(--kb-text)' }} />
+          <ChevronRight className="w-5 h-5 sm:w-8 sm:h-8" style={{ color: 'var(--kb-text)' }} />
         </button>
       </div>
 
       {/* Dot indicators */}
-      <div className="fixed bottom-6 left-6 flex gap-3 z-50">
+      <div className="fixed bottom-6 left-6 flex gap-2 sm:gap-3 z-50">
         {Array.from({ length: totalPages }).map((_, idx) => (
           <button
             key={idx}
             onClick={() => goTo(idx)}
-            className="w-3 h-3 rounded-full transition-all hover:scale-125"
+            className="w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all hover:scale-125"
             style={{
               backgroundColor: currentPage === idx ? 'var(--kb-accent-blue)' : 'var(--kb-muted)',
               opacity: currentPage === idx ? 1 : 0.5,

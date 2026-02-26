@@ -178,8 +178,6 @@
 
   html {
     font-size: var(--font-size);
-    min-width: 1280px;
-    min-height: 768px;
     background-color: var(--kb-outer-bg);
   }
 

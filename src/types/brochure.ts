@@ -13,6 +13,10 @@ export interface BrochureNavState {
   goTo: (page: number) => void;
   next: () => void;
   prev: () => void;
+  touchHandlers: {
+    onTouchStart: (e: React.TouchEvent) => void;
+    onTouchEnd: (e: React.TouchEvent) => void;
+  };
 }
 
 export interface PdfDownloadState {
