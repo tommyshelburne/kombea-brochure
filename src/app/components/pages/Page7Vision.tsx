@@ -93,12 +93,15 @@ export function Page7Vision() {
               workflow assessment. KomBea provides a formal Infrastructure Audit to evaluate
               automation eligibility, compliance risk exposure, and projected operating model impact.
             </p>
-            <p
-              className="flex-shrink-0 tracking-tight"
-              style={{ fontSize: '17px', fontWeight: 600, color: 'var(--kb-text)', letterSpacing: '-0.01em' }}
+            <a
+              href="https://www.kombea.com/#book"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 tracking-tight hover:opacity-80 transition-opacity"
+              style={{ fontSize: '17px', fontWeight: 600, color: 'var(--kb-text)', letterSpacing: '-0.01em', textDecoration: 'none' }}
             >
               Schedule an Infrastructure Audit →
-            </p>
+            </a>
           </div>
         </div>
       </div>
