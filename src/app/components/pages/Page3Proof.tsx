@@ -54,11 +54,11 @@ export function Page3Proof() {
           <ProofCard
             stat="400M+"
             statLabel="Calls to date and counting"
-            title="Mass Tort Law Firm"
+            title="All Industries Served"
             points={[
-              'High-volume legal intake across active litigation matters in multiple jurisdictions. Platform operates across all industries — including healthcare, financial services, and government — with HIPAA and PCI compliance built in.',
-              'Supports both inbound intake and outbound campaign execution. Deterministic script enforcement applied at the system level; protocol updates propagate immediately across all active agents.',
-              'Reduction in intake variability and script remediation incidents. Human escalation pathways preserve full case context. Compliance-verified for regulated industries, including healthcare.',
+              'Deployed across healthcare, legal, financial services, mortgage, government, and nonprofit sectors. HIPAA and PCI compliance built into the platform — not bolted on.',
+              'Supports both inbound and outbound campaigns within a single deployment. Deterministic script enforcement applied at the system level across all verticals and interaction types.',
+              'Consistent outcomes regardless of industry or use case. Human escalation pathways and supervisory visibility maintained at every tier. 400M+ calls and counting across all clients served.',
             ]}
           />
         </div>
