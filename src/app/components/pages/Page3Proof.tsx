@@ -36,9 +36,9 @@ export function Page3Proof() {
             statLabel="Annually saved"
             title="Mortgage Enterprise"
             points={[
-              'Mortgage servicing operation with strict compliance requirements across loan modification, forbearance, and payment processing.',
-              'Deterministic script enforcement deployed across compliance-sensitive workflows. Tier 1 interactions automated; Tier 2 escalations routed to human agents with full interaction context pre-loaded.',
-              'Documented reduction in staffing required for equivalent volume. Compliance variance reduced. Human supervisory visibility retained at all automation tiers. Savings verified through operational audit.',
+              'Mortgage servicer operating under strict regulatory compliance across loan modification, forbearance, and payment processing workflows.',
+              'Deterministic script enforcement deployed across compliance-sensitive interactions. Tier 1 volume automated; Tier 2 escalations routed to human agents with full context pre-loaded.',
+              'Documented staffing reduction for equivalent call volume. Compliance variance eliminated. Supervisory visibility maintained across all tiers. Verified through independent operational audit.',
             ]}
           />
           <ProofCard
@@ -46,19 +46,19 @@ export function Page3Proof() {
             statLabel="Raised and growing"
             title="High-Volume Outreach Organization"
             points={[
-              'High-volume outbound and inbound operation requiring integration across constituent management, CRM, and payment processing infrastructure.',
-              'Bidirectional API integration consolidated agent workflows into a single interaction layer. Deployed within compressed operational timelines.',
-              'Measured improvement in agent productivity. Supervisory visibility maintained throughout. Manual data reconciliation reduced. Operational continuity preserved during competitive platform evaluations.',
+              'High-volume inbound and outbound campaign operation requiring unified integration across constituent management, CRM, and payment processing infrastructure.',
+              'Bidirectional API integration consolidated agent workflows into a single interaction layer. Deployed under compressed timelines without disrupting live operations.',
+              'Measured improvement in agent productivity and supervisory visibility. Manual reconciliation eliminated. Platform stability maintained across competitive evaluation windows.',
             ]}
           />
           <ProofCard
-            stat="1M+"
-            statLabel="Outbound calls per day"
+            stat="400M+"
+            statLabel="Calls to date and counting"
             title="Mass Tort Law Firm"
             points={[
-              'High-volume legal intake with strict script compliance requirements across active litigation matters in multiple jurisdictions.',
-              'Deterministic response framework enforced scripted compliance at the system level. Protocol updates propagated immediately across all active agents without manual intervention.',
-              'Reduction in intake variability and script remediation incidents. Human escalation pathways preserved full case context throughout. Cost stabilization relative to prior staffing model.',
+              'High-volume legal intake across active litigation matters in multiple jurisdictions. Platform operates across all industries — including healthcare, financial services, and government — with HIPAA and PCI compliance built in.',
+              'Supports both inbound intake and outbound campaign execution. Deterministic script enforcement applied at the system level; protocol updates propagate immediately across all active agents.',
+              'Reduction in intake variability and script remediation incidents. Human escalation pathways preserve full case context. Compliance-verified for regulated industries, including healthcare.',
             ]}
           />
         </div>
